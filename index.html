@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <div>
+        <meta charset="UTF-8">
+    </div>
+    <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+    <div>
+        <title>Basit Web Sitesi</title>
+    </div>
+    <div>
+        <link rel="stylesheet" href="style.css">
+    </div>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+<div>
+    <html lang="tr">
+        <head>
+            <div>
+                <meta charset="UTF-8">
+            </div>
+            <div>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </div>
+            <div>
+                <title>Saat Gösterme</title>
+            </div>
+            <div>
+                <style>
+                    #saat {
+                        font-size: 24px;
+                    }
+                </style>
+            </div>
+        </head>
+        <body>
+            <div></div>
+        </body>
+    </html>
+</div>
+
+<body>
+    <div id="saat"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">LOGO</a>
+        </div>
+        <ul>
+            <li><a href="#" class="active">Ana Sayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Hizmetler</a></li>
+            <li><a href="#">Ürünler</a></li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+    </div>
+    <div class="center">
+        <h1>Test Web Sitesi</h1>
+        <br>
+        <h1>Hoşgeldiniz</h1>
+        <div class="buttons"> 
+            <button>Daha fazla</button>
+            <button>Diğerleri</button>
+            <button>Bu buton çalışmıyor</button>
+            <button>Hiçbir buton çalışmıyor</button>
+        </div>
+        <form id="hesapMakinesi1">
+            <h3>Hesap Makinesi</h3>
+            <input type="number" id="sayi1_1" placeholder="İlk sayıyı girin">
+            <input type="number" id="sayi2_1" placeholder="İkinci sayıyı girin">
+            <select id="islem_1">
+                <option value="topla">Toplama</option>
+                <option value="çıkar">Çıkarma</option>
+                <option value="çarp">Çarpma</option>
+                <option value="böl">Bölme</option>
+            </select>
+            <button type="button" onclick="hesapla1()">Hesapla</button>
+            <div id="sonuç1"></div>
+        </form>
+        <form id="hesapMakinesi2">
+            <h3>Hesap Makinesi Değil</h3>
+            <input type="number" id="sayi1_2" placeholder="İlk sayıyı girin">
+            <input type="number" id="sayi2_2" placeholder="İkinci sayıyı girin">
+            <select id="islem_2">
+                <option value="topla">Toplama</option>
+                <option value="çıkar">Çıkarma</option>
+                <option value="çarp">Çarpma</option>
+                <option value="böl">Bölme</option>
+            </select>
+            <button type="button" onclick="hesapla2()">Hesapla</button>
+            <div id="resultImage2"></div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function hesapla1() {
+        const sayi1 = parseFloat(document.getElementById('sayi1_1').value);
+        const sayi2 = parseFloat(document.getElementById('sayi2_1').value);
+        const işlem = document.getElementById('islem_1').value;
+        let sonuç;
+
+        switch (işlem) {
+            case 'topla':
+                sonuç = sayi1 + sayi2;
+                break;
+            case 'çıkar':
+                sonuç = sayi1 - sayi2;
+                break;
+            case 'çarp':
+                sonuç = sayi1 * sayi2;
+                break;
+            case 'böl':
+                sonuç = sayi1 / sayi2;
+                break;
+            default:
+                sonuç = "Geçersiz işlem";
+        }
+
+        document.getElementById('sonuç1').textContent = "Sonuç: " + sonuç;
+    }
+
+    function hesapla2() {
+        
+        document.getElementById('resultImage2').innerHTML = "<img src='mert.png' alt='Mert'>";
+    }
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+</html>
+
+<head>
+    <div>
+        <meta charset="UTF-8">
+    </div>
+    <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+    <div>
+        <title>Web Sitesi Yönlendirme</title>
+    </div>
+    <div>
+        <link rel="stylesheet" href="styles.css">
+    </div>
+</head>
+<h3>Bak bu buton çok önemli</h3>
+<h3>Bak önemli diyorum</h3>
+<style>
+    body {
+      background-color: rgb(248, 226, 238);
+    }
+    h3 {
+      color: purple;
+      text-align: center;
+    }
+  </style>
+<body>
+    <div>
+        <button id="mertButton">Dönen kedi</button>
+        <style>
+            #mertButton {
+                width: 100%;
+                height: 50px;
+            }
+        </style>
+    </div>
+
+    <div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
+
+<head>
+    <div>
+        <meta charset="UTF-8">
+    </div>
+    <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+    <div>
+        <title>Saat Gösterme</title>
+    </div>
+    <div>
+        <style>
+            #saat {
+                font-size: 24px;
+            }
+        </style>
+    </div>
+</head>
+
+<body>
+    <div id="saat"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<head>
+</head>
+<body>
+    <h3>Aşağıdaki kısımnda siteyi her yenilediğinizde farklı bir üç basamaklı sayı verecektir</h3>
+    <p id="rastgeleSayi"></p>
+
+    <script src="script.js"></script>
+    <script>
+        var rastgeleSayi = rastgeleUcBasamakliSayi();
+        document.getElementById('rastgeleSayi').innerText = "Rastgele Sayı: " + rastgeleSayi;
+    </script>
+</body>
+<br>
+<br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoş Geldiniz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mesaj"></div>
+    
+    <script src="script.js"></script>
+</body>
+
+
+</head>
+<br>
+<br>
+<body>
+    <h3>Aşağıdaki şerite her tıkladığınızda rengi değişecektir</h3>
+<img id="resim" src="resim1.png" alt="Resim">    
+
+<style>
+    #resim {
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+    }
+</style>
+
+
+<script src="script.js"></script>
+
+</body>
+
+<br>
+<br>
+<head>
+
+    <title>Resim Değiştirme</title>
+    <style>
+        .resim {
+            width: 20px;
+            height: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Buraya yazdığınız ok tuşları sıralanacaktır</p>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            var resim = document.createElement('img');
+            resim.className = 'resim';
+    
+            switch(event.key) {
+                case 'ArrowUp':
+                    resim.src = '1.png'; 
+                    break;
+                case 'ArrowDown':
+                    resim.src = '2.png'; 
+                    break;
+                case 'ArrowLeft':
+                    resim.src = '3.png'; 
+                    break;
+                case 'ArrowRight':
+                    resim.src = '4.png'; 
+                    break;
+                default:
+                    return;
+            }
+    
+            document.body.appendChild(resim);
+        });
+    </script>
+    
+</script>
+</body>
+</head>
+<head>
+<br>
+<br>
+</body>
+</html>
+
+<body>
+
+    <html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Renk Seçimi</title>
+    </head>
+    <body>
+    
+    <script src="main.js"></script>
+    
+    </body>
+    </html>
+
+    <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<br>
+<br>
+<body>
+
+<script src="kırmızımavibuton.js"></script>
+
+</body>
+</html>
+<section id="features" class="section-area">
+    <div class="features-top">
+        <h2 class="section-header">Aşağıya sizler için 6 kedi türü sıraladık</h2>
+        <p>Alt kısımda senin için 6 başlık sıraladık.</p>
+    </div>
+    <div id="alanlar" class="features-body">
+        <div class="container">
+            <div class="col">
+                <div class="item">
+                    <div class="zoom">
+                        <img src="british_shorthair.jpg" class="cat-image" alt="British Shorthair">
+                    </div>
+                    <div class="item-text">
+                        <h3>British Shorthair</h3>
+                        <p>Yuvarlak yüz, yoğun ve kısa tüyler. Sakin, dost canlısı ve bağımsızdır.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <div class="zoom">
+                        <img src="maine_coon.jpg" class="cat-image" alt="Maine Coon">
+                    </div>
+                    <div class="item-text">
+                        <h3>Maine Coon</h3>
+                        <p>Büyük boyut, kabarık tüyler, uzun kuyruk. Sosyal, zeki ve oyuncudur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <div class="zoom">
+                        <img src="siamese.jpg" class="cat-image" alt="Siyam Kedisi">
+                    </div>
+                    <div class="item-text">
+                        <h3>Siyam Kedisi</h3>
+                        <p>İnce, zarif vücut, mavi gözler ve kısa tüyler. Sesli, aktif ve insan odaklıdır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col">
+                <div class="item">
+                    <div class="zoom">
+                        <img src="scottish_fold.jpg" class="cat-image" alt="Scottish Fold">
+                    </div>
+                    <div class="item-text">
+                        <h3>Scottish Fold</h3>
+                        <p>Kıvrık kulaklar, yuvarlak yüz ve kısa tüyler. Sakin, sevecen ve sadıktır.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <div class="zoom">
+                        <img src="persian.jpg" class="cat-image" alt="Persian">
+                    </div>
+                    <div class="item-text">
+                        <h3>Persian</h3>
+                        <p>Uzun ve yoğun tüyler, basık yüz. Sessiz, sakin ve sevecendir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item">
+                    <div class="zoom">
+                        <img src="bengal.jpg" class="cat-image" alt="Bengal">
+                    </div>
+                    <div class="item-text">
+                        <h3>Bengal</h3>
+                        <p>Leopar benzeri desenler, atletik vücut. Enerjik, meraklı ve oyuncudur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: url(arkaplan.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.container .navbar {
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 0, 106, 0.363);
+}
+
+.navbar .logo {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 19px;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 38px;
+    font-family: sans-serif;
+    color: #f8ffac;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 19px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 3px;
+    font-family: Roboto;
+    transition: .5s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: #ff6e00;
+    border-radius: 2px;
+}
+
+.container .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    color: rgb(221, 185, 255);
+    user-select: none;
+    text-align: center; 
+}
+
+.center h1 {
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+
+.center h2 {
+    color: rgb(151, 205, 252);
+    font-size: 20px;
+    font-weight: bold;
+    width: 600px;
+    margin-top: 10px;
+}
+
+.center .buttons {
+    margin: 35px auto; 
+}
+
+.buttons button {
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    color: bisque;
+    background: rgb(207, 96, 88);
+    border: solid 1px rgb(255, 0, 234);
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: background 0.3s; 
+}
+
+.buttons button:hover {
+    background: white;
+}
+
+#sonuç1 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#cevap {
+    font-size: 20px;
+}
+
+#saat {
+    font-size: 24px;
+    background-color: #7b3878;
+    color: rgb(255, 255, 255); 
+    padding: 10px; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#mesaj {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #df81ff;
+    color: rgb(83, 255, 169);
+    padding: 10px 20px;
+    font-size: 38px;
+    border-radius: 5px;
+    transition: top 0.5s ease-in-out;
+}
+
+#mesaj.goster {
+    top: 20px;
+}
+
+#mertButton {
+    background-color: #291881; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 12px;
+}
+
+.resim {
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+button.buton9 {
+    background-color: #ff6600; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+button.buton9:hover {
+    background-color: #ff3300; 
+}
+
+button.buton9:active {
+    background-color: #cc5200; 
+}
+.section-area {
+    padding: 20px;
+}
+
+.features-top {
+    text-align: center;
+}
+
+.section-header {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.features-body .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.col {
+    flex: 0 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.zoom img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.zoom img:hover {
+    transform: scale(1.1);
+}
+
+.item-text {
+    margin-top: 10px;
+}
+
+.item-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.btn-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-details:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.cat-image {
+    width: 25%;
+    height: auto;
+}

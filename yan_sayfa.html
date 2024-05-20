@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div>
+            <meta charset="UTF-8">
+        </div>
+        <div>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </div>
+        <div>
+            <title>Yan Sayfa</title>
+        </div>
+    </head>
+    <body>
+        <div>
+            <h1>Kedi Sitesi</h1>
+        </div>
+        <div>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <div>
+                    <meta charset="UTF-8">
+                </div>
+                <div>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </div>
+                <div>
+                    <title>Mert'in Sayfası</title>
+                </div>
+            </head>
+            <div>
+                <meta charset="UTF-8">
+            </div>
+            <div>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </div>
+        </div>
+    </body>
+    
+<body>
+    <body>
+        <img src="gorseller/kedi.gif" alt="Mert GIF">
+        <style>
+            img {
+                width: 100%; 
+            }
+        </style>
+    </body>
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <button onclick="geriyeSay()">Bu buton boş bir buton</button>
+    <script src="script.js"></script>
+</body>
+
+
+    <link rel="stylesheet" href="arkaplan.css">
+</head>
+<body>
+    <h1>Arkaplan Rengini seçiniz</h1>
+    <label for="renkSec">Arkaplan Rengi Seç:</label>
+    <input type="color" id="renkSec">
+    <button onclick="arkaplanRenginiDegistir()">Arkaplan rengini uygula</button>
+    
+    <script src="script.js"></script>
+</body>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedi Butonu</title>
+</head>
+<body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var button = document.createElement('button');
+        button.textContent = 'Kedi Butonu';
+        document.body.appendChild(button);
+
+        button.addEventListener('click', function() {
+            setTimeout(function() {
+                var kediGif = document.createElement('img');
+                kediGif.src = 'gorseller/kedi.gif';
+                kediGif.alt = 'Kedi';
+                document.body.appendChild(kediGif);
+            }, 2000); 
+        });
+    });
+</script>
+
+</body>
+</html>

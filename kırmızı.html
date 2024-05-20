@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: red;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        #resim {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotateImage 5s linear infinite;
+        }
+        @keyframes rotateImage {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>KIRMIZI</h1>
+    <div id="container">
+        <img id="resim" src="gorseller/gülümkırmızı.png" alt="Gülümseyen Kırmızı Resim">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="kırmızımavibuton.js"></script>
+</body>
+</html>
